@@ -1,0 +1,105 @@
+<html>
+<head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+       /* width:1000px;
+        margin: 100px auto 0;*/
+        background:#f5f4f2;
+    }
+</style>
+
+</head>
+    <body>
+        <!-- This is the container for the carousel. -->
+        <div id = "carousel1" style="width:800px; height:550px;overflow:scroll;">            
+            <!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+            <!-- You can place links around these images -->
+            <img class = "cloudcarousel" src="Bump/img1.jpg" alt="Flag 1 Description" title="Flag 1 Title" />
+            <img class = "cloudcarousel" src="Bump/img2.jpg" alt="Flag 2 Description" title="Flag 2 Title" />
+            <img class = "cloudcarousel" src="Bump/img3.jpg" alt="Flag 3 Description" title="Flag 3 Title" />
+            <img class = "cloudcarousel" src="Bump/img4.jpg" alt="Flag 4 Description" title="Flag 4 Title" />
+        </div>
+        
+        <!-- Here we define left and right buttons. 
+        <input id="left-but"  type="button" value="Left" />
+        <input id="right-but" type="button" value="Right" />
+        -->
+        <!-- Here we define elements to accept the alt and title text from the images. 
+        <p id="title-text"></p>
+        <p id="alt-text"></p>
+        -->
+
+     <!--
+     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
+     </script>
+        -->
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+<!-- Load the CloudCarousel JavaScript file -->
+    <script type="text/JavaScript" src="js/cloud-carousel.1.0.5.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+    <script>
+    $(document).ready(function(){
+                               
+        // This initialises carousels on the container elements specified, in this case, carousel1.
+        $("#carousel1").CloudCarousel(      
+            {           
+                xPos:400,
+                yPos: 125,
+                buttonLeft: null,
+                buttonRight: null,
+                altBox: null,
+                titleBox: null,
+                mouseWheel:true,
+                autoRotate: 'left',
+                bringToFront: 'true',
+                autoRotateDelay: 5000
+
+                
+            }
+        );
+
+    //     $("#carousel1").on('keyup',function(event){
+
+    //         //event.preventDefault();
+    //         var keyCode = event.keyCode || event.which,
+    //             arr = {left:  37,
+    //                    up:    38,
+    //                    right: 39,
+    //                    down:  40
+    //                 };
+    //         console.log(keyCode);
+    //         if(keyCode === arr.left)
+    //         {
+
+    //             //event.data.rotate(-1);
+    //             console.log('keyup:'+keyCode)
+    //             return false;
+    //         }
+    //         else if(keyCode === arr.right)
+    //         {
+    //             // event.data.rotate(1);
+    //             console.log('keyup:'+keyCode)
+    //             return false;
+    //         }
+    //         // switch(keyCode)
+    //         // {                
+    //         //  case arr.left:
+    //         //      e.data.rotate(-1);
+    //         //      return false;
+    //         //  case arr.right:
+    //         //      e.data.rotate(1);
+    //         //      return false;   
+    //         // }
+    //     });
+    });
+
+    </script>   
+    </body>
+</html>

@@ -1,0 +1,353 @@
+﻿
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love Timeline</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		 @font-face {
+			font-family: 'codeFont';
+			src: url("x-files.ttf") format("truetype");
+			
+			font-family: 'digit';
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+		#rose
+		{
+			height: 500px;
+			width: 600px;
+		}
+		#ifDiv
+		{
+			
+			margin: 0px auto;
+		}
+		#if
+		{
+			width:800px;
+			height:600px;
+		}
+	</style>
+	
+	<link href='http://fonts.googleapis.com/css?family=Flavors' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+	
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<link href="css/fireworks.css" type="text/css" rel="stylesheet">
+	<!-- // <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<!--
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	-->
+	<script type="text/javascript" src="scripts/garden.js"></script>
+    <script type="text/javascript" src="scripts/fireworks.js"></script>
+	<script type="text/javascript" src="scripts/functions.js"></script>
+	
+	
+	<style type="text/css">	
+
+	</style>
+	
+	<!-- <script type="text/javascript">
+		obj = document.getElementById("check"); 
+		var file="special.CSS"; 
+			if (window.getComputedStyle) 
+				var stat = window.getComputedStyle(obj,null).getPropertyValue("display"); 
+		else if (obj.currentStyle) 
+				var stat = obj.currentStyle.display; var css3 = (stat == "block"); 
+		if (css3) alert("CSS3 Supported."); 
+		else alert("CSS3 not supported."); 
+	</script> -->
+	
+	<!-- Place this render call where appropriate -->
+	<script type="text/javascript">
+	//   (function() {
+	// 	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	// 	po.src = 'https://apis.google.com/js/plusone.js';
+	// 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	//   })();
+	</script>
+	
+	<!--google analytics code-->
+	<script type="text/javascript">
+
+	 //  var _gaq = _gaq || [];
+	 //  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+	 //  _gaq.push(['_trackPageview']);
+
+	 //  (function() {
+		// var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		// ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	 //  })();
+
+</script>
+
+</head>
+
+<body>
+<!-- <span id="check" rel="Detect"></span> -->
+	<div id="mainDiv">
+		<div id="fireworks-template">
+		<div id="fw" class="firework"></div>
+		<div id="fp" class="fireworkParticle"><img src="gif/particles.gif" alt="" /></div>
+	</div>
+	<div id="fireContainer">
+	
+	</div>
+	
+	<button type="button" onclick="onFire()">On Fire</button>
+	<!-- <div id="ttf">
+	Test TTF and this is good.
+	</div> -->
+		<div id="content">
+			
+			<div id="code">
+			
+				<span class="d3">
+				Dear Yi,<br/>
+                Since we met, it's been <br/>
+				</span>
+                <span id="metdays" class="dayD3">
+                </span>
+                <span class="d3">
+                <br />Days.<br/>
+				I am always ur only -1~<br/>
+                </span> 		
+			</div>
+			<div id="ua">
+			</div>
+			<span id="video100"></span>
+
+			<!-- <div>
+			<iframe id="rose" src =".\NiceRose.html">
+			<p>your browser does not support iframes</p>
+			</iframe>
+	
+			</div> -->
+			<!--
+			<div id="playAudio">
+			<a href="http://www.uploadmusic.org"><object type="application/x-shockwave-flash" width="17"
+height="17"data="http://www.uploadmusic.org/musicplayer.swf?song_url=http://www.uploadmusic.org/MUSIC/2007301326120765.mp3&autoplay=true"><param  name="movie"value="http://www.uploadmusic.org/musicplayer.swf?song_url=http://www.uploadmusic.org/MUSIC/2007301326120765.mp3&song_title=uploadmusic.org&autoplay=true"
+/></object></a>
+			</div>
+			-->
+			<!-- Place this tag where you want the +1 button to render -->
+			<div>
+			<g:plusone size="tall" annotation="inline"></g:plusone>
+			</div>
+			<div id="loveHeart">
+				<div id="ifDiv">
+					<iframe id="if" src ="./slider.html" scrolling="no" frameborder="0">
+						<p>your browser does not support iframes</p>
+					</iframe>
+				</div>
+				<canvas id="garden"></canvas>
+				<div id="words" class="d3">
+					<div id="messages">
+						<!-- Dear Yi,
+						<br/> -->
+						Since we fell in love on Oct 2, 2011. It has been:
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<span class="signature">- LWQ</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script type="text/javascript">
+
+       function fvideoOn(){
+	   
+	   var a ='<embed src=\"http:\/\/player.youku.com\/player.php\/sid\/XMzM3ODE0NDcy\/v.swf\" allowFullScreen=\"true\" quality=\"high\" width=\"480\" height=\"400\" align=\"middle\" allowScriptAccess=\"never\" type=\"application/x-shockwave-flash\"></embed>';
+	   console.log("fvideOn, url: "+a); 
+		$("#video100").html(a);
+	   }
+	   
+	   function playAudio(){
+	   var songUrl ="http://www.uploadmusic.org/MUSIC/2007301326120765.mp3";
+	   //"http://bt.xmanyao.info/COFFdD0xMzI2MTE2NjQ4Jmk9MTE0Ljg5LjM5LjE4JnU9U29uZ3MvdjIvZmFpbnRRQy8wNy9mMi81MmU1MjljMzE1ZjA3N2M4MGVjMjEwMGMwZmFkZjIwNy5tcDMmbT05NTJkNzE5OTNkNjVlNDFmMzY1N2RiZjc5NGY3Mzk5OCZ2PWxpc3RlbiZuPdf2xOO1xMTQyMsmcz3VxdDF1dwmcD1z.mp3";
+	   var audio = new Audio();
+	   audio.setAttribute("src",songUrl);
+	   //audio.d
+	   audio.play();
+	   if(audio.ended)
+	   {
+		//new sentences in left pattern.
+		alert("suprise~");
+	   }
+	   
+	   }
+	   /*
+	   var a ='<a href="http://www.uploadmusic.org"><object type="application/x-shockwave-flash" width="17"
+height="17"data="http://www.uploadmusic.org/musicplayer.swf?song_url=http://www.uploadmusic.org/MUSIC/2007301326120765.mp3&autoplay=true"><param  name="movie"value="http://www.uploadmusic.org/musicplayer.swf?song_url=http://www.uploadmusic.org/MUSIC/2007301326120765.mp3&song_title=uploadmusic.org&autoplay=true"
+/></object></a>' -->
+*/	   
+	   
+    </script>
+    <!--
+	<script src="http://img3.douban.com/js/packed_radiowidget9088440332.js?doubanid=3728811&maxresults=3">
+	</script>
+	-->
+	<script type="text/javascript">
+	
+		var codeDiv = $('#code');
+
+		getUseragent();
+		//playAudio();
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			codeDiv.css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			
+
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 10000);
+			// afterHeartAnimation(function(){
+			// 	imgSlider();
+			// });
+
+			}
+
+	var handinhand = "Oct 2, 2011 20:00:00";
+	timeElapse(handinhand);
+	setInterval(function () {
+		timeElapse(handinhand);
+	}, 500);
+
+
+//addtional: add a callback for after heart animation
+function afterHeartAnimation(callback)
+{
+	setTimeout(function () {
+				startHeartAnimation();
+			}, 10000);
+	callback();
+}
+
+//deal the met100-day situation
+var met = "Sep 25, 2011 00:00:00";
+function metTimeTrigger(metTime,callback)
+{
+	metTimeElapse(met);
+setInterval(function () {
+    metTimeElapse(met);
+}, 5000);
+	callback();
+}
+
+//to make sure the dom is not null;
+metTimeTrigger(met,function()
+{
+	//playAudio();
+	var metDays=$("#metdays").html();
+	console.log('days: ' +metDays);
+	if(metDays % 100 == 0)
+	{
+		console.log("metDays is 100 times");
+		onFire();
+		codeDiv.fadeOut(5000);
+	}
+	if(metDays%365>=0 && metDays%365<=10)
+	//if(metDays-98>=-1)
+	{
+		console.log("metDays anniversary goes");
+		/*
+		TODO: should adjust the postion of the appearance of video
+		*/
+		// fvideoOn();
+		//playAudio();
+	}
+});
+			
+	//adjustCodePosition();
+	
+	/*
+	after typewrite(),i wanna show the rose canvas and replace the code div.
+	*/
+	codeDiv.typewriter(function()
+	{
+		//restore it and use it when click back
+		var htmlReserved = codeDiv.html();
+		//alert("after type");
+		DisplayRose();
+		//add click function
+		codeDiv.click(function(){
+			
+			codeDiv.html(htmlReserved);
+		});
+	});
+	
+	/*
+		draw a Rose
+	*/
+	function DisplayRose()
+	{
+		//todo: $(this).slideUp(); //make it much nice look
+		codeDiv.html("");
+	
+		//var roseShow=
+	//'<iframe id=\"rose\" src =\".\/NiceRose.html\"><p>your browser does not support iframes</p></iframe>';
+		var roseShow='<canvas id=\"rose\"></canvas>';
+		codeDiv.html(roseShow);
+		
+		/*
+		var canvas = document.createElement('canvas');
+		canvas.setAttribute("width", 500);
+		canvas.setAttribute("height", 600);
+		canvas.setAttribute("id", "rose");
+		$("#code").append(canvas);
+		//canvas = G_vmlCanvasManager.initElement(canvas);
+		*/	
+			var b = document.body;
+			var c = document.getElementById("rose");
+			var a = c.getContext("2d");
+			document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
+// start of submission //
+with(m=Math)C=cos,S=sin,P=pow,R=random;
+c.width=c.height=f=500;
+h=-250;
+function pp(a,b,c)
+{
+	if(c>60)
+	return[S(a*7)*(13+5/(.2+P(b*4,4)))-S(b)*50,b*f+50,625+C(a*7)*(13+5/(.2+P(b*4,4)))+b*400,a*1-b/2,a];
+	A=a*2-1;
+	B=b*2-1;
+	if(A*A+B*B<1)
+	{
+	if(c>37){n=(j=c&1)?6:4;o=.5/(a+.01)+C(b*125)*3-a*300;w=b*h;return[o*C(n)+w*S(n)+j*610-390,o*S(n)-w*C(n)+550-j*350,1180+C(B+A)*99-j*300,.4-a*.1+P(1-B*B,-h*6)*.15-a*b*.4+C(a+b)/5+P(C((o*(a+1)+(B>0?w:-w))/25),30)*.1*(1-B*B),o/1e3+.7-o*w*3e-6]}if(c>32){c=c*1.16-.15;o=a*45-20;w=b*b*h;z=o*S(c)+w*C(c)+620;return[o*C(c)-w*S(c),28+C(B*.5)*99-b*b*b*60-z/2-h,z,(b*b*.3+P((1-(A*A)),7)*.15+.3)*b,b*.7]}o=A*(2-b)*(80-c*2);w=99-C(A)*120-C(b)*(-h-c*4.9)+C(P(1-b,7))*50+c*2;z=o*S(c)+w*C(c)+700;return[o*C(c)-w*S(c),B*99-C(P(b, 7))*50-c/3-z/1.35+450,z,(1-b/1.2)*.9+a*.1, P((1-b),20)/4+.05]
+	}
+}
+setInterval(function(){
+for(i=0;i<1e4;i++)
+{
+	if(s=pp(R(),R(),i%46/.74))
+	{
+		z=s[2];x=~~(s[0]*f/z-h);
+		y=~~(s[1]*f/z-h);
+		if(!m[q=y*f+x]|m[q]>z)
+			m[q]=z,a.fillStyle="rgb("+~(s[3]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a.fillRect(x,y,1,1)
+	}
+// end of submission //
+}},0);
+}
+	</script>
+	<!-- <object width="121" height="458"> <param name="movie" value="http://t.douban.com/swf/radio_widget.swf"></param> <param name="allowscriptaccess" value="always"></param> <param name="wmode" value="opaque"></param> <param name="flashVars" value="doubanid=3728811&maxresults=3"></param> <embed src="http://t.douban.com/swf/radio_widget.swf" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="opaque" width="121" height="458" flashVars="doubanid=3728811&maxresults=3"> </embed> </object>
+     -->
+    <!--<embed src="http://player.youku.com/player.php/Type/Folder/Fid/16497461/Ob/1/Pt/0/sid/XMzM2ODg3MDI4/v.swf" quality="high" width="480" height="400" align="middle" allowScriptAccess="never" allowFullScreen="true" mode="transparent" type="application/x-shockwave-flash"></embed>-->
+</body>
+</html>

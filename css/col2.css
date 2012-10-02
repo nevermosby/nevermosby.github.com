@@ -1,0 +1,37 @@
+﻿
+
+/*
+this is the template for 2 columns
+*/
+
+.content
+{
+    /*960 / 1250*/
+    width: 76.8%;
+    margin: 0 auto;
+    
+    /*
+    border: 2px solid #000;
+    */
+}
+
+.content .primary
+{
+    /*630/940 */
+    width: 67%;
+    border: 2px solid #CCC;
+    background-color: #91D6F8;
+    float: left;
+    display: inline;
+}
+
+.content .secondary
+{
+    /*270/940*/
+    width: 28.7%;
+    border: 2px solid #DDD;
+    background-color: #91D6F8;
+    float: right;
+    padding-right: 2.12%;
+    display: inline;
+}

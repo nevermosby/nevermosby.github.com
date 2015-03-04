@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Jekyll-Bootstrap
 
 The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
@@ -46,4 +45,3 @@ nevermosby.github.com
 =====================
 
 use jekylly to make a blog
->>>>>>> 09ce2158e8ba25f2753139a0274ec5ad88685f84
